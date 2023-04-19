@@ -1,0 +1,1 @@
+export const data = JSON.parse("{\"key\":\"v-75e1b663\",\"path\":\"/%E6%95%B0%E6%8D%AE%E5%BA%93/Mybatis/base/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%92%8C%E4%BD%9C%E7%94%A8%E5%9F%9F.html\",\"title\":\"目录\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"目录\"},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"数据库/Mybatis/base/生命周期和作用域.md\"}")
