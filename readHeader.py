@@ -25,6 +25,7 @@ def traverse_directory(path, base_url, depth=0):
             if ext.lower() == '.md':
                 relative_url = os.path.relpath(item_path, '.' + os.sep + 'docs')
                 encoded_url = url_encode(relative_url.replace('\\', '/'))
+                encoded_url = encoded_url.replace('.md', '.html')  # 将 .md 扩展名替换为 .html
                 md_files.append((filename, base_url + encoded_url))
 
     for filename, url in md_files:
@@ -38,9 +39,7 @@ def traverse_directory(path, base_url, depth=0):
 def main():
     markdown_filename = 'README.md'
     path = './docs'
-    
-    # 将你的github账户的用户名和仓库名填入
-    base_url = 'https://用户名.github.io/仓库名/'
+    base_url = 'https://0eumenides.github.io/notebook/'
 
     markdown_text = traverse_directory(path, base_url)
 
